@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Agent Portal</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="css/fullcalendar.css" />
+<link rel="stylesheet" href="css/maruti-style.css?v=2" />
+<link rel="stylesheet" href="css/maruti-media.css" class="skin-color" />
+
+<style>
+
+img {
+    width: auto\9;
+    height: 61px;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+</style>
+
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+ <div class="control-group normal_text"> <h3><img src="img/biomedical_logo.png" alt="Logo" /></h3>
+				
+				 </div>
+</div>
+<!--close-Header-part--> 
+
+<!--top-Header-messaages-->
+<div class="btn-group rightzero"> <a class="top_message tip-left" title="Manage Files"><i class="icon-file"></i></a> <a class="top_message tip-bottom" title="Manage Users"><i class="icon-user"></i></a> <a class="top_message tip-bottom" title="Manage Comments"><i class="icon-comment"></i><span class="label label-important">5</span></a> <a class="top_message tip-bottom" title="Manage Orders"><i class="icon-shopping-cart"></i></a> </div>
+<!--close-top-Header-messaages--> 
+
+<!--top-Header-menu-->
+<div id="user-nav" class="navbar navbar-inverse">
+  <ul class="nav">
+    <li class="" ><a title="" href="#"><i class="icon icon-user"></i> <span class="text">Profile</span></a></li>
+    <li class=" dropdown" id="menu-messages"><a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle"><i class="icon icon-envelope"></i> <span class="text">Messages</span> <span class="label label-important">5</span> <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a class="sAdd" title="" href="#">new message</a></li>
+        <li><a class="sInbox" title="" href="#">inbox</a></li>
+        <li><a class="sOutbox" title="" href="#">outbox</a></li>
+        <li><a class="sTrash" title="" href="#">trash</a></li>
+      </ul>
+    </li>
+    <li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">Settings</span></a></li>
+    <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
+  </ul>
+</div>
+
+<!--close-top-Header-menu-->
+
+<div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> User Management</a><ul>
+    <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>User Management</span></a> </li>
+    <li> <a href="charts.html"><i class="icon icon-signal"></i> <span>Worker Management</span></a>
+
+<ul>
+        <li><a href="form-common.html">Registration</a></li>
+        <li><a href="form-validation.html">Payment</a></li>
+        <li><a href="form-wizard.html">Assignment to Medical Center</a></li>
+		 <li><a href="form-common.html">Pre Quota Info</a></li>
+        <li><a href="form-validation.html">Quota Info & MoEWOE Permission</a></li>
+        <li><a href="form-wizard.html">BMET Clearance</a></l>
+      </ul>
+
+	</li>
+    <li> <a href="widgets.html"><i class="icon icon-inbox"></i> <span>Transfer Worker</span></a>
+
+<ul>
+        <li><a href="form-common.html">Assign Transfer Worker</a></li>
+        <li><a href="form-validation.html">Accept Transfer Worker</a></li>
+</ul>
+	</li>
+    <li><a href="tables.html"><i class="icon icon-th"></i> <span>Employment Contract</span></a>
+	
+	
+	<ul>
+        <li><a href="form-common.html">Upload Employment Contract</a></li>
+        <li><a href="form-validation.html">Sign Employment Contract</a></li>
+</ul>
+	
+	</li>
+    <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>Global Search</span></a></li>
+    <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Report</span> </a>
+
+    </li>
+    
+    
+
+  </ul>
+</div>
+<div id="content">
+  
+  <div class="container-fluid">
+
+  <div class="row-fluid">
+  
+
+   <div class="row-fluid">
+      <div class="span6">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+            <h5>Worker Details</h5>
+          </div>
+          <div class="widget-content nopadding">
+            <form action="#" method="get" class="form-horizontal">
+              <div class="control-group">
+                <label class="control-label">Name (As per Passport)</label>
+                <div class="controls">
+                  <input type="text" class="span11" placeholder="First name" />
+                </div>
+              </div>
+               <div class="control-group">
+                <label class="control-label">Worker Type</label>
+                <div class="controls">
+                  <label>
+                    <input type="radio" name="radios" />
+                    Foreign Worker</label>
+                  <label>
+                    <input type="radio" name="radios" />
+                    Foreign Domestic Helper</label>
+                  
+                </div>
+              </div>
+			  
+			         <div class="control-group">
+                <label class="control-label">Gender</label>
+                <div class="controls">
+                  <label>
+                    <input type="radio" name="radios" />
+                   Male</label>
+                  <label>
+                    <input type="radio" name="radios" />
+                    Female</label>
+                  
+                </div>
+              </div>
+             <div class="control-group">
+                <label class="control-label">Date of Birth</label>
+                <div class="controls">
+                  <input type="text" data-date="01-02-2013" data-date-format="dd-mm-yyyy" value="01-02-2013" class="datepicker span11">
+                  <span class="help-block">Date with Formate of  (dd-mm-yy)</span> </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">Nationality</label>
+                <div class="controls">
+                  <select >
+                    <option>Nepal</option>
+                    <option>Bangladesh</option>
+                    <option>India</option>
+                    <option>Indonesia</option>
+                    <option>Myanmar</option>
+                    <option>Sri Lanka</option>
+                    <option>Pakistan</option>
+                    <option>Vietnam</option>
+                  </select>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">Passport No.:</label>
+                <div class="controls">
+                  <input type="text" class="span11" />
+                   </div>
+              </div>
+               <div class="control-group">
+                <label class="control-label">Passport Issue Date</label>
+                <div class="controls">
+                  <input type="text" data-date="01-02-2013" data-date-format="dd-mm-yyyy" value="01-02-2013" class="datepicker span11">
+                  <span class="help-block">Date with Formate of  (dd-mm-yy)</span> </div>
+              </div>
+			      <div class="control-group">
+                <label class="control-label">Passport Expiry Date</label>
+                <div class="controls">
+                  <input type="text" data-date="01-02-2013" data-date-format="dd-mm-yyyy" value="01-02-2013" class="datepicker span11">
+                  <span class="help-block">Date with Formate of  (dd-mm-yy)</span> </div>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-success">Save</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="span6">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+            <h5>KIN Details</h5>
+          </div>
+          <div class="widget-content nopadding">
+            <form action="#" method="get" class="form-horizontal">
+             <div class="control-group">
+                <label class="control-label">Father's Name</label>
+                <div class="controls">
+                  <input type="text" class="span11" placeholder="Father Name" />
+                </div>
+              </div>
+                  <div class="control-group">
+                <label class="control-label">Address</label>
+                <div class="controls">
+                  <input type="text" class="span11" placeholder="Address1" />
+				 
+				  <input type="text" class="span11" placeholder="Address2" />
+				  
+				  <input type="text" class="span11" placeholder="Address3" />
+                </div>
+              </div>
+           <div class="control-group">
+                <label class="control-label">ZIP Code</label>
+                <div class="controls">
+                  <input type="text" class="span11" placeholder="12345" />
+                </div>
+              </div>
+             <div class="control-group">
+                <label class="control-label">Contact Number</label>
+                <div class="controls">
+                  <input type="text" class="span11" placeholder="012345789" />
+                </div>
+              </div>
+              
+              <div class="form-actions">
+                <button type="submit" class="btn btn-success">Save</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+   
+ 
+  
+
+  </div>
+</div>
+</div>
+</div>
+
+<script src="js/excanvas.min.js"></script> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.ui.custom.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.flot.min.js"></script> 
+<script src="js/jquery.flot.resize.min.js"></script> 
+<script src="js/jquery.peity.min.js"></script> 
+<script src="js/fullcalendar.min.js"></script> 
+<script src="js/maruti.js"></script> 
+<script src="js/maruti.dashboard.js"></script> 
+<script src="js/maruti.chat.js"></script> 
+ 
+
+<script type="text/javascript">
+  // This function is called from the pop-up menus to transfer to
+  // a different page. Ignore if the value returned is a null string:
+  function goPage (newURL) {
+
+      // if url is empty, skip the menu dividers and reset the menu selection to default
+      if (newURL != "") {
+      
+          // if url is "-", it is this page -- reset the menu:
+          if (newURL == "-" ) {
+              resetMenu();            
+          } 
+          // else, send page to designated URL            
+          else {  
+            document.location.href = newURL;
+          }
+      }
+  }
+
+// resets the menu selection upon entry to this page:
+function resetMenu() {
+   document.gomenu.selector.selectedIndex = 2;
+}
+</script>
+</body>
+</html>

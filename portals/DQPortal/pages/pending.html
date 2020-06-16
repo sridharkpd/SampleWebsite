@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="app.css">
+
+    <title>Pending - Passport Renewal for Foreign Workers in Malaysia</title>
+</head>
+<body class="pending">
+    <div class="header clearfix">
+        <div class="container">
+            <h1 class="title text-uppercase float-left">Passport Renewal</h1>
+            <div class="logo float-right">
+                <img src="images/mini-logo.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+    <div class="menu clearfix">
+        <div class="container text-uppercase">
+            <ul class="nav float-left">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><img src="images/icon-list-dark.png" alt="" class="icon-left" />Pending Renewal List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icon-check-white.png" alt="" class="icon-left" />Check Status</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icon-history-white.png" alt="" class="icon-left" />Transaction History</a>
+                </li>
+            </ul>
+            <ul class="nav float-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icon-logout.png" alt="" class="icon-left" />Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="title text-uppercase">Passport Renewal List</h2>
+                </div>
+                <form class="col">
+                    <div class="form-row">
+                        <div class="col text-right">
+                            <div class="dropdown">
+                                <button class="btn btn-2 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Search by PATI ID
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Enter PATI ID">
+                                <div class="input-group-append">
+                                    <button class="btn btn-3 btn-search" type="button"><img src="images/icon-search.png" alt="" /></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead class="text-uppercase">
+                            <tr>
+                                <th></th>
+                                <th>Company's Name</th>
+                                <th>ROC Number</th>
+                                <th>Worker's Name</th>
+                                <th>Nationality</th>
+                                <th>Passport<br />Number</th>
+                                <th>Passport<br />Expires On</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked />
+                                        <label class="custom-control-label" for="customCheck1"></label>
+                                    </div>
+                                </td>
+                                <td>ABC Sdn Bhd</td>
+                                <td>12345-A</td>
+                                <td>Bhuiyan, Abdul Mannan</td>
+                                <td>Bangladesh</td>
+                                <td>BF012345678</td>
+                                <td>2019-12-31</td>
+                                <td>
+                                    <span class="badge badge-1 text-uppercase" data-toggle="tooltip" data-placement="top" title="Please proceed to payment">OK</span>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-link-1"><img src="images/icon-delete.png" alt="" class="icon-left" />Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2" />
+                                        <label class="custom-control-label" for="customCheck2"></label>
+                                    </div>
+                                </td>
+                                <td>ABC Sdn Bhd</td>
+                                <td>12345-A</td>
+                                <td>Bhuiyan, Abdul Mannan</td>
+                                <td>Bangladesh</td>
+                                <td>BF012345678</td>
+                                <td>2019-12-31</td>
+                                <td>
+                                    <span class="badge badge-2 text-uppercase" data-toggle="tooltip" data-placement="top" title="Please upload document to proceed">Upload Docs</span>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-link-2"><img src="images/icon-upload.png" alt="" class="icon-left" />Upload</button>
+                                    <br />
+                                    <button type="button" class="btn btn-link-1"><img src="images/icon-delete.png" alt="" class="icon-left" />Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="images/icon-left.png" alt="" /></a>
+                        </li>
+                        <li class="nav-item">
+                            Page <span class="badge">1</span> of 4
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="images/icon-right.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col text-right">
+                    <a href="#" class="btn btn-1">Proceed to payment<img src="images/icon-right-white.png" alt="" class="icon-right"/></a>
+                    <p>Select a worker to renew their passport.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer clearfix">
+        <div class="container">
+            <p>All logos and trademarks in this site are the property of their respective owner.<br />Copyright &copy; 2018 MyEG Services Berhad. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

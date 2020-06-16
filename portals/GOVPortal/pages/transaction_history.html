@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="app.css">
+
+    <title>Transaction History - Passport Renewal for Foreign Workers in Malaysia</title>
+</head>
+<body class="pending">
+    <div class="header clearfix">
+        <div class="container">
+            <h1 class="title text-uppercase float-left">Passport Renewal</h1>
+            <div class="logo float-right">
+                <img src="images/mini-logo.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+    <div class="menu clearfix">
+        <div class="container text-uppercase">
+            <ul class="nav float-left">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icon-list-white.png" alt="" class="icon-left" />Pending Renewal List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icon-check-white.png" alt="" class="icon-left" />Check Status</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><img src="images/icon-history-dark.png" alt="" class="icon-left" />Transaction History</a>
+                </li>
+            </ul>
+            <ul class="nav float-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icon-logout.png" alt="" class="icon-left" />Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="title text-uppercase">Transaction History</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="panel">
+                        <p>Please select any one of the criteria to view records.</p>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="passportNumber">Passport Number</label>
+                                    <input type="text" id="passportNumber" class="form-control" placeholder="Enter Passport Number" />
+                                </div>
+                                <div class="form-group col">
+                                    <label for="roc">Company Registration Number</label>
+                                    <input type="text" id="roc" class="form-control" placeholder="Enter Company Registration Number">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-3">
+                                    <label for="fromDate">From</label>
+                                    <input type="text" id="fromDate" class="form-control" placeholder="DD-MM-YYYY">
+                                </div>
+                                <div class="form-group col-3">
+                                    <label for="toDate">From</label>
+                                    <input type="text" id="toDate" class="form-control" placeholder="DD-MM-YYYY">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col text-right">
+                                    <button type="submit" class="btn btn-1">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="lead">3 items found. No items found.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead class="text-uppercase">
+                            <tr>
+                                <th>PATI ID</th>
+                                <th>Company's Name</th>
+                                <th>ROC Number</th>
+                                <th>Worker's Name</th>
+                                <th>Nationality</th>
+                                <th>Passport<br />Number</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>P01020304056</td>
+                                <td>ABC Sdn Bhd</td>
+                                <td>12345-A</td>
+                                <td>Bhuiyan, Abdul Mannan</td>
+                                <td>Bangladesh</td>
+                                <td>BF012345678</td>
+                                <td>Passport application in progress</td>
+                            </tr>
+                            <tr>
+                                <td>P01020304056</td>
+                                <td>ABC Sdn Bhd</td>
+                                <td>12345-A</td>
+                                <td>Bhuiyan, Abdul Mannan</td>
+                                <td>Bangladesh</td>
+                                <td>BF012345678</td>
+                                <td>Passport application in progress</td>
+                            </tr>
+                            <tr>
+                                <td>P01020304056</td>
+                                <td>ABC Sdn Bhd</td>
+                                <td>12345-A</td>
+                                <td>Bhuiyan, Abdul Mannan</td>
+                                <td>Bangladesh</td>
+                                <td>BF012345678</td>
+                                <td>Passport application in progress</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="images/icon-left.png" alt="" /></a>
+                        </li>
+                        <li class="nav-item">
+                            Page <span class="badge">1</span> of 1
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="images/icon-right.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer clearfix">
+        <div class="container">
+            <p>All logos and trademarks in this site are the property of their respective owner.<br />Copyright &copy; 2018 MyEG Services Berhad. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
